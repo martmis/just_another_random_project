@@ -1,13 +1,38 @@
+html {
+  background-color: #C6DEC6;
+}
+
+nav {
+
+}
+nav .navbar {
+  background-color: #E4F6E4;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+nav .container-fluid {
+  background-color: #E4F6E4;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 550px}
 
 /* Set gray background color and 100% height */
 .sidenav {
-  background-color: #f1f1f1;
+  background-color: #E4F6E4;
   height: 100%;
-}
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 
+}
+.sidenav nav .nav-pills .nav-stacked{
+  margin-top: 20px;
+  text-color: #528460;
+}
+.sidenav h2{
+  position: relative;
+  margin-right: 500px;
+  align-items: center;
+}
 /* On small screens, set height to 'auto' for the grid */
 @media screen and (max-width: 767px) {
   .row.content {height: auto;}
@@ -17,33 +42,28 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
+    padding-top: 0!important; /* Location of the box */
+    max-width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
 }
 
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #E4F6E4;;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
 }
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
+/*@-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
@@ -51,7 +71,7 @@
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
-}
+}*/
 
 /* The Close Button */
 .close {
@@ -68,16 +88,73 @@
     cursor: pointer;
 }
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #E4F6E4;
+  color: #2D6852;
 }
 
-.modal-body {padding: 2px 16px;}
 
+.modal-header, .close {
+    background-color: #C6DEC6;
+    color: #2D6852 !important;
+    text-align: center;
+    font-size: 30px;
+}
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    background-color: #C6DEC6;
+    color: #2D6852;
+}
+.modal-dialog {
+
+}
+/* Style The Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top:10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    border-color: #E8FEFF;
+    z-index: 999;
+    display: none;
+    position: absolute;
+    background-color: #E4F6E4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    z-index: 100;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-color: #528468;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    left: auto;
+    right: 12px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .burger-menu {
+  color: white;
+}
+.burger-menu{
+  color: #77B09B;
 }
