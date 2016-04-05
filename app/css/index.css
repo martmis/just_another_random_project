@@ -15,7 +15,8 @@ nav .container-fluid {
 }
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 550px}
+
+/* .row.content {height: 600px}*/
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -25,7 +26,7 @@ nav .container-fluid {
 
 }
 .sidenav nav .nav-pills .nav-stacked{
-  margin-top: 20px;
+  margin-top: 50px;
   text-color: #528460;
 }
 .sidenav h2{
@@ -157,4 +158,76 @@ nav .container-fluid {
 }
 .burger-menu{
   color: #77B09B;
+}
+.nav-pills{
+  margin-top: 20px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #77B09B!important;
+    border-color: #C7E8DC;
+    color: white;
+}
+
+.nav-pills>li>a {
+    border-radius: 4px;
+    color: #355E4F;
+    background-color: #C6DEC6!important;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-color: #C7E8DC;
+}
+
+.nav-pills>li>a {
+    border-radius: 4px;
+}
+
+ .btn-upload {
+  color: #ffffff;
+  background-color: #77B09B;
+  border-color: #C7E8DC;
+}
+
+.btn-upload:hover,
+.btn-upload:focus,
+.btn-upload:active,
+.btn-upload.active,
+.open .dropdown-toggle.btn-upload {
+  color: #ffffff;
+  background-color: #477D69;
+  border-color: #C7E8DC;
+}
+
+.btn-upload:active,
+.btn-upload.active,
+.open .dropdown-toggle.btn-upload {
+  background-image: none;
+}
+
+.btn-upload.disabled,
+.btn-upload[disabled],
+fieldset[disabled] .btn-upload,
+.btn-upload.disabled:hover,
+.btn-upload[disabled]:hover,
+fieldset[disabled] .btn-upload:hover,
+.btn-upload.disabled:focus,
+.btn-upload[disabled]:focus,
+fieldset[disabled] .btn-upload:focus,
+.btn-upload.disabled:active,
+.btn-upload[disabled]:active,
+fieldset[disabled] .btn-upload:active,
+.btn-upload.disabled.active,
+.btn-upload[disabled].active,
+fieldset[disabled] .btn-upload.active {
+  background-color: #77B09B;
+  border-color: #C7E8DC;
+}
+
+.btn-upload .badge {
+  color: #77B09B;
+  background-color: #ffffff;
 }

@@ -8,10 +8,17 @@ var btn = document.getElementById("myBtn");
 // Get modal dialog box
 var modalDialogBox = document.getElementsByClassName("modal-dialog")[0];
 
+var rowContent = document.getElementById("rowContent");
+
 // Create function to resize
 function resizeModal(){
   modalDialogBox.style['margin-top'] = (window.innerHeight - modalDialogBox.clientHeight)/2 + "px";
 }
+
+function resizeRowContent(){
+  rowContent.style['height'] = window.innerHeight + "px";
+}
+
 
 
 // Get the <span> element that closes the modal
@@ -21,9 +28,11 @@ var span = document.getElementsByClassName("close")[0];
 window.onload = function() {
     modal.style.display = "block";
     resizeModal();
+    resizeRowContent();
 }
 
 window.addEventListener("resize", resizeModal);
+window.addEventListener("resize",resizeRowContent);
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
